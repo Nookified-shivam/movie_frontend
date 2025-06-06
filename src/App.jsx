@@ -1,4 +1,4 @@
-import './App.css'
+import "./css/app.css"
 import MovieCard from './components/MovieCard'
 import Homepage  from './pages/home'
 import {Routes,Route} from "react-router-dom"
@@ -7,9 +7,7 @@ import Navbar from './components/navbar'
 function App() {
 return(
   <div>
-    <div className="navbar">
 <Navbar/>
-    </div>
 <main className="main-content">
   <Routes>
     <Route path='/' element=<Homepage/>/>

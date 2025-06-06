@@ -1,3 +1,4 @@
+import "../css/MovieCard.css"
 function MovieCard({movie}){
     function LikeOnClick(){
 alert("liked");
@@ -5,8 +6,10 @@ alert("liked");
     return(
         <div className="movie-card">
             <div className="movie-poster">
-                <img src="{movie.url}" alt="" />
-                <button className="like" onClick={LikeOnClick}>like</button>
+                <img src={movie.url} alt={movie.name} />
+                <div className="movie-overlay">
+                <button className="favorite-btn" onClick={LikeOnClick}>❤️</button>
+            </div>
             </div>
             <div className="movie-info">
                 <h1 className="movie-name">{movie.name}</h1>
