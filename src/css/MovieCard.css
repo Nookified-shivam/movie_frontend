@@ -4,9 +4,9 @@
   overflow: hidden;
   background-color: #1a1a1a;
   transition: transform 0.2s;
-  height: 100%;
   display: flex;
   flex-direction: column;
+  max-width: 300px;
 }
 
 .movie-card:hover {
@@ -31,11 +31,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.1),
-    rgba(0, 0, 0, 0.8)
-  );
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.8));
   opacity: 0;
   transition: opacity 0.2s;
   display: flex;
@@ -72,7 +70,8 @@
 .favorite-btn.active {
   color: #ff4757;
 }
-.movie-name {
+
+.movie-title {
   font-size: 1.2rem;
   font-weight: bold;
   color: white;
@@ -99,10 +98,12 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  background-color: #575656;
 }
 
 .movie-info h3 {
-  font-size: 1rem;
+  font-size: 1.3rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 0;
 }
 
